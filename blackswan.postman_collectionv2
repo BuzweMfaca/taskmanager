@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "blackswan",
+		"_postman_id": "432d9f0c-34fd-f765-b67f-06ab0cc9fc98",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"url": "http://localhost:8080/api/user",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"jsmith\",\"first_name\" : \"John\", \"last_name\" : \"Smith\"}"
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"url": "http://localhost:8080/api/user/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"first_name\" : \"John\", \"last_name\" : \"Doe\"}"
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "List all users",
+			"request": {
+				"url": "http://localhost:8080/api/user",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
